@@ -10,7 +10,7 @@ int main()
 	setlocale(LC_ALL, "rus");
 
 	int n;
-	cout << ("Вход: \n");
+	cout << ("Вход: ");
 	cin >> n;
 
 	int count = 0;
@@ -19,18 +19,13 @@ int main()
 	int* arr = new int[n];
 
 	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % 5 + 1;
-		cout << arr[i] << " ";
-	}
-	cout << "\n";
+		cin >> arr[i];
 
 	for (int i = 0; i < n; i++)
 		m[arr[i]]++;
 	
 	for (auto it = m.begin(); it != m.end(); ++it)
 	{
-		cout << "(" << it->first << ", " << it->second << ")" << endl;
 		if (it->second == 1)
 			continue;
 		else
