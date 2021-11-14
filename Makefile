@@ -1,4 +1,4 @@
 all:
-	g++ -o outputSearchDublicat.o sortfast.cpp
+	g++ -o outputSearchDublicat.o Search_dublicats.cpp
 clean:
 	rm -rf *.o
